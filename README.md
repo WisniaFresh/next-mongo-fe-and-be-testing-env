@@ -1,3 +1,25 @@
+## BE tests wrote in jest
+
+They connect to real db (in test env mode so use different collection, that's set up in .env.test), thats why I use jest --runInBand to trigger file by file. Otherwise they conflict easily
+
+```bash
+npm run test
+```
+
+## E2e test wrote in playwright 
+
+```bash
+#1t console run to start app using .env.test (http://localhost:3000)
+npm run dev:test
+
+#2nd console run to trigger test runs
+npm run e2e
+
+## or
+npm run e2e:ui
+## to see they are actually run in the browser
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
