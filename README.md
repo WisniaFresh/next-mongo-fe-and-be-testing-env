@@ -1,4 +1,4 @@
-## BE tests wrote in jest
+## BE tests (jest)
 
 They connect to real db (in test env mode so use different collection, that's set up in .env.test), thats why I use jest --runInBand to trigger file by file. Otherwise they conflict easily
 
@@ -6,7 +6,7 @@ They connect to real db (in test env mode so use different collection, that's se
 npm run test
 ```
 
-## E2e test wrote in playwright 
+## E2e test (playwright)
 
 ```bash
 #1t console run to start app using .env.test (http://localhost:3000)
